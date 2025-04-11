@@ -3,7 +3,13 @@ class TarefasController < ApplicationController
 
   # GET /tarefas or /tarefas.json
   def index
-    @tarefas = Tarefa.all
+    if params[:status] == "concluidas"
+      @tarefas = Tarefa.where(concluida: true)
+    elsif params[:status] == "nao_concluidas"
+      @tarefas = Tarefa.where(concluida: false)
+    else
+      @tarefas = Tarefa.all
+    end
   end
 
   # GET /tarefas/1 or /tarefas/1.json

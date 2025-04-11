@@ -1,0 +1,43 @@
+# Arquivos temporários comuns
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.bak
+*.old
+*.orig
+
+# Arquivos temporários criados por editores
+# VSCode
+.vscode/
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# JetBrains (RubyMine, etc.)
+.idea/
+
+# Arquivos do sistema operacional
+.DS_Store       # macOS
+Thumbs.db       # Windows
+ehthumbs.db     # Windows
+desktop.ini     # Windows
+
+# Arquivos de log
+*.log
+
+# Diretórios temporários comuns
+tmp/
+temp/
+.cache/
+node_modules/
+
+# Arquivos temporários do Ruby on Rails
+log/
+tmp/
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.sqlite3-journal
